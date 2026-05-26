@@ -21,6 +21,7 @@ const projectsData = [
     num: "01",
     category: "Personal",
     name: "Thumblify",
+    link: "https://thumblify-gray.vercel.app",
     images: {
       col1_1: thumblifyImg1,
       col1_2: thumblifyImg2,
@@ -31,6 +32,7 @@ const projectsData = [
     num: "02",
     category: "Personal",
     name: "Postify AI",
+    link: "https://postify-ai-six.vercel.app",
     images: {
       col1_1: postifyImg1,
       col1_2: postifyImg2,
@@ -41,6 +43,7 @@ const projectsData = [
     num: "03",
     category: "Personal",
     name: "Quick Blog",
+    link: "https://quick-blog-nine-liart.vercel.app",
     images: {
       col1_1: quickBlogImg1,
       col1_2: quickBlogImg2,
@@ -51,6 +54,7 @@ const projectsData = [
     num: "04",
     category: "Client",
     name: "Samruddhi",
+    link: "https://samruddhinxt.in",
     images: {
       col1_1: samruddhiImg1,
       col1_2: samruddhiImg2,
@@ -61,6 +65,7 @@ const projectsData = [
     num: "05",
     category: "Client",
     name: "Rare Jewels",
+    link: "https://rarejewel.online",
     images: {
       col1_1: rareJewelsImg1,
       col1_2: rareJewelsImg2,
@@ -71,6 +76,7 @@ const projectsData = [
     num: "06",
     category: "Client",
     name: "Agro",
+    link: "https://japexim.co.in",
     images: {
       col1_1: agroImg1,
       col1_2: agroImg2,
@@ -81,6 +87,7 @@ const projectsData = [
     num: "07",
     category: "Client",
     name: "Trackify",
+    link: "https://admin.trackify.sparkflows.in",
     images: {
       col1_1: trackifyImg1,
       col1_2: trackifyImg2,
@@ -118,7 +125,7 @@ const ProjectCard = ({ project, index, progress, targetScale }) => {
               </h3>
             </div>
           </div>
-          <LiveProjectButton />
+          <LiveProjectButton link={project.link} />
         </div>
 
         {/* Bottom Row */}
