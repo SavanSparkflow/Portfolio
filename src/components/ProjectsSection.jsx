@@ -123,26 +123,24 @@ const ProjectCard = ({ project, index, progress, targetScale }) => {
 
         {/* Bottom Row */}
         <div className="flex-1 flex flex-col md:flex-row gap-4 sm:gap-6 min-h-0">
-          <div className="w-full md:w-[40%] flex flex-col gap-4 sm:gap-6 h-full">
+          <div className="w-full md:w-[40%] flex flex-col gap-4 sm:gap-6 min-h-0 h-full">
             <img 
               src={project.images.col1_1} 
               alt={`${project.name} 1`}
-              className="w-full object-cover rounded-[40px] sm:rounded-[50px] md:rounded-[60px]"
-              style={{ height: 'clamp(130px, 16vw, 230px)' }}
+              className="w-full object-cover rounded-[20px] sm:rounded-[30px] md:rounded-[40px] shrink-0"
+              style={{ height: 'clamp(100px, 25%, 180px)' }}
             />
             <img 
               src={project.images.col1_2} 
               alt={`${project.name} 2`}
-              className="w-full object-cover rounded-[40px] sm:rounded-[50px] md:rounded-[60px] flex-1"
-              style={{ minHeight: 'clamp(160px, 22vw, 340px)' }}
+              className="w-full object-cover rounded-[20px] sm:rounded-[30px] md:rounded-[40px] flex-1 min-h-0"
             />
           </div>
-          <div className="w-full md:w-[60%] h-full">
+          <div className="w-full md:w-[60%] min-h-0 h-full flex flex-col">
             <img 
               src={project.images.col2} 
               alt={`${project.name} 3`}
-              className="w-full h-full object-cover rounded-[40px] sm:rounded-[50px] md:rounded-[60px]"
-              style={{ minHeight: '300px' }}
+              className="w-full h-full object-cover rounded-[20px] sm:rounded-[30px] md:rounded-[40px] flex-1 min-h-0"
             />
           </div>
         </div>
